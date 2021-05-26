@@ -1,0 +1,101 @@
+:root {
+    --font: rgb(0, 0, 0);
+    --background: #8780e9;
+    --header: #003b99;
+    --title: #000000;
+    --border: #000000;
+    --button: #6d6d6d;
+    --button-hover: #4a4f57;
+    --button-active: #5b5f68;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6;
+    background-color: var(--background);
+  }  
+  
+  body {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  header {
+
+    font-size: 3.2rem;
+  }
+  
+  h1 {
+    line-height: 1.2;
+  }
+
+  .header {
+    padding: 2rem;
+    border-bottom: 1px solid;
+    background-color: var(--header);
+    text-align: center;
+    margin: 1px 350px;
+  }
+  .title {
+    color: var(--title);
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  
+  
+  .container {
+    padding: 1rem;
+  }
+  
+  .button {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 6px;
+    border: 2px solid var(--button-border);
+    background-color: var(--button);
+    color: #000000;
+    font-family: inherit;
+    font-size: 1.6rem;
+    outline: none;
+  }
+  
+  .button:hover {
+    background-color: var(--button-hover);
+  }
+  
+  .button:active {
+    background-color: var(--button-active);
+  }
+  
+  .grid {
+    display: grid;
+    max-width: 500px;
+    min-height: 500px;
+    margin: 2rem auto;
+    border: 1px solid var(--border);
+  }
+  
+  .grid-element {
+    border: 0.5px solid var(--border);
+    background-color: #ffffff;
+  }
+  
+  @media (max-width: 450px) {
+    header {
+      font-size: 2.4rem;
+    }
+  
+    .grid {
+      max-width: 300px;
+      min-height: 300px;
+    }
+  }
