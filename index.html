@@ -15,17 +15,26 @@
     </header>
 
     <div id="main-container" class="container">
-<form>
-        <label for="grid">Grid Size:</label>
-
-        <input type="number" id="grid-size" name="grid-size" min="1" max="100" placeholder="1-100" autocomplete="off">
-
-        <input type="submit" id="submit-button" value="Change Size" class="button">
-
-</form>
+        
+        <form>
+            <label for="grid">Grid Size:</label>
+    
+            <input type="number" id="grid-size" name="grid-size" min="1" max="100" placeholder="1-100" autocomplete="off">
+    
+            <input type="submit" id="submit-button" value="Change Size" class="button">
+    
+    </form>
 <p>Current size: <span>0</span></p>
+<div class="buttons">
+    <button id="black-button" class="color-choice" data-color="black" type="button">Black</button>
+    <button id="rainbow-button" class="color-choice" data-color="rainbow" type="button">Rainbow</button>
+    <button id="grayscale-button" class="color-choice" data-color="gray" type="button">Gray Scale</button>
+    <button id="eraser-button" class="color-choice" data-color="eraser" type="button">Eraser</button>
+</div>
+
         <div id="grid-container" class="grid"></div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 
