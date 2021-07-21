@@ -4,7 +4,7 @@
     --header: #003b99;
     --title: #000000;
     --border: #000000;
-    --button: #6d6d6d;
+    --button: #acacac;
     --button-hover: #4a4f57;
     --button-active: #5b5f68;
   }
@@ -56,6 +56,7 @@
     padding: 1rem;
   }
   .color-choice,
+  .clear,
   .button {
     padding: 1rem;
     margin: 1rem;
@@ -70,6 +71,7 @@
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
   .color-choice:hover,
+  .clear:hover,
   .button:hover {
     background-color: var(--button-hover);
   }
@@ -97,7 +99,9 @@ button:focus {
   outline: none ;
   box-shadow: 0 1px 10px 0 rgba(240, 240, 240, 1);
 }
-
+.clear{
+  background: white;
+}
 #rainbow-button{
   background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
 

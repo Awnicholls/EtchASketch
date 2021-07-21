@@ -1,7 +1,8 @@
 const gridContainer = document.querySelector("#grid-container");
 const colorButtons = document.querySelectorAll('.color-choice');
+const clearButton = document.getElementById('clear-button');
 colorButtons.forEach(colorButton => colorButton.addEventListener('click', changeColor));
-
+clearButton.addEventListener('click', clearGrid);
 
 var color = "black";
 
@@ -94,8 +95,7 @@ function changeColor(e) {
 function clearGrid() {
   const gridArray = Array.from(gridContainer.childNodes);
   gridArray.forEach((element) => {
-    gridContainer.removeChild(element);
-  });
+    element.style.backgroundColor = '#ffffff'  });
 }
 //functions to check input is a number and then create new grid of selected size
 function changeSize(gridNumber) {
